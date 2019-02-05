@@ -22,12 +22,7 @@ HardwareSerial SERIALDEVICE_SPS30(2);
 
 
 s16 sensirion_uart_open() {
-#ifdef USE_HARDWARE_SERIAL_ESP32
     SERIALDEVICE_SPS30.begin(BAUDRATE,SERIAL_8N1,PIN_UART_RX,PIN_UART_TX);
-#endif
-#ifdef USE_SOFTWARE_SERIAL_ARDUINO
-    SERIALDEVICE_SPS30.begin(BAUDRATE);
-#endif
     return 0;
 }
 s16 sensirion_uart_close() {
