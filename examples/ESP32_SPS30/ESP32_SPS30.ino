@@ -55,7 +55,7 @@ void loop() {
                 Serial.print("nc0.5 :");Serial.println(measurement.nc_0p5);
                 Serial.print("nc1.0 :");Serial.println(measurement.nc_1p0);
                 Serial.print("nc2.5 :");Serial.println(measurement.nc_2p5);
-                Serial.print("nc4.5 :");Serial.println(measurement.nc_4p0);
+                Serial.print("nc4.0 :");Serial.println(measurement.nc_4p0);
                 Serial.print("nc10.0 :");Serial.println(measurement.nc_10p0);
                 Serial.print("typical particle size :");Serial.println(measurement.typical_particle_size);
             }
